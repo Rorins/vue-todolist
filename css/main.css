@@ -1,0 +1,16 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 700px;
+  padding: 20px 20px;
+}
+
+/*ToDo completati*/
+.completed {
+  text-decoration: line-through;
+}
