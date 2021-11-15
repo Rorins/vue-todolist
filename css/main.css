@@ -7,7 +7,24 @@
 .container {
   margin: 0 auto;
   max-width: 700px;
-  padding: 20px 20px;
+  padding: 100px 100px;
+}
+
+/*Header*/
+header {
+  display: flex;
+  align-items: center;
+}
+
+/*Main*/
+main,
+section {
+  text-align: center;
+}
+
+img {
+  width: 200px;
+  border-radius: 50%;
 }
 
 /*ToDo completati*/
