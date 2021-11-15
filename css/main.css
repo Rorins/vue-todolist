@@ -2,6 +2,8 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+  font-size: 20px;
 }
 
 .container {
@@ -21,12 +23,29 @@ main,
 section {
   text-align: center;
 }
+h1 {
+  font-size: 30px;
+}
 
 img {
   width: 200px;
   border-radius: 50%;
 }
+.new-toDo input {
+  outline: none;
+  border: 0;
+  height: 30px;
+  border-bottom: 1px solid black;
+}
 
+button {
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.delete:hover {
+  color: red;
+}
 /*ToDo completati*/
 .completed {
   text-decoration: line-through;

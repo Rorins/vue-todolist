@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./css/main.css" />
+    <!--FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <!--FONTAWESOME-->
     <link
       rel="stylesheet"
@@ -21,7 +28,7 @@
         <h1>Kitty to Do list</h1>
       </header>
       <!--Add-->
-      <section>
+      <section class="new-toDo">
         <input
           type="text"
           placeholder="new to Do"
@@ -39,7 +46,10 @@
         <ul v-if="toDo.length > 0">
           <li v-for="(element,index) in toDo">
             <span :class="{completed:element.completed}">{{element.text}}</span>
-            <i class="far fa-times-circle" @click="removeToDo(index)"></i>
+            <i
+              class="far fa-times-circle delete"
+              @click="removeToDo(index)"
+            ></i>
           </li>
         </ul>
       </main>
