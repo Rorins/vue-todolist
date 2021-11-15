@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./css/main.css" />
+    <!--FONTAWESOME-->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <div id="root" class="container">
@@ -25,9 +32,10 @@
      Stampare all’interno di una lista, un item per ogni todo.
      Se la proprietà completed è uguale a true, visualizzare il testo del todo sbarrato. -->
       <main>
-        <ul>
-          <li v-for="element in toDo">
+        <ul v-if="toDo.length > 0">
+          <li v-for="(element,index) in toDo">
             <span :class="{completed:element.completed}">{{element.text}}</span>
+            <i class="far fa-times-circle" @click="removeToDo(index)"></i>
           </li>
         </ul>
       </main>

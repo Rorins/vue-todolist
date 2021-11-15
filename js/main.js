@@ -38,6 +38,14 @@ const app = new Vue({
             //Puliamo lo spazio
             this.newToDo = "";
             }
+        },
+//         MILESTONE 2
+// Visualizzare a fianco di ogni todo una “x”:
+//  cliccando su di essa, il todo viene rimosso dalla lista.
+//Rimuoviamo ToDo
+        removeToDo(index){
+            console.log(index);
+            this.toDo.splice(index, 1);
         }
     }
 });
